@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: ac8d087b4ce553147a817fd7ca3a2776
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8986567067357871097
+    second: cair_0
+  - first:
+      213: 8071397990729420958
+    second: cair_1
+  - first:
+      213: -8018855767104834498
+    second: cair_2
+  - first:
+      213: 2020406275936721836
+    second: cair_3
+  - first:
+      213: -7565546711355873569
+    second: cair_4
+  - first:
+      213: -3418332099266216402
+    second: cair_5
+  - first:
+      213: 5547543566805788138
+    second: cair_6
+  - first:
+      213: -8488129186972313480
+    second: cair_7
+  - first:
+      213: -3111634079224845655
+    second: cair_8
+  - first:
+      213: 2369660057125146727
+    second: cair_9
+  - first:
+      213: -1019477880376818242
+    second: cair_10
+  - first:
+      213: -6175958689381918380
+    second: cair_11
+  - first:
+      213: -7517454519729635180
+    second: cair_12
+  - first:
+      213: 7265629809264222030
+    second: cair_13
+  - first:
+      213: -7182029044923823552
+    second: cair_14
+  - first:
+      213: 7697257711586886310
+    second: cair_15
+  - first:
+      213: -6357219047206602833
+    second: cair_16
+  - first:
+      213: -3872118148906638202
+    second: cair_17
+  - first:
+      213: 4247339047845917231
+    second: cair_18
+  - first:
+      213: -5334864540585235266
+    second: cair_19
+  - first:
+      213: 8442446932866909607
+    second: cair_20
+  - first:
+      213: 1230331718959318648
+    second: cair_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cair_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 48
+        width: 135
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70409e77ddc494380800000000000000
+      internalID: -8986567067357871097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 161
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e909a3e55bd530070800000000000000
+      internalID: 8071397990729420958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 163
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e34bf906a2d47b090800000000000000
+      internalID: -8018855767104834498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_3
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 141
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab9d2badcce90c10800000000000000
+      internalID: 2020406275936721836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_4
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 146
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd6220a9957c10790800000000000000
+      internalID: -7565546711355873569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_5
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 17
+        width: 137
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2efbea1115af80d0800000000000000
+      internalID: -3418332099266216402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_6
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 103
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5667b5b75dcfc40800000000000000
+      internalID: 5547543566805788138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_7
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 108
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 878d3eaf97b143a80800000000000000
+      internalID: -8488129186972313480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_8
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 131
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aaadc48a4141d4d0800000000000000
+      internalID: -3111634079224845655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_9
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 127
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76050675449b2e020800000000000000
+      internalID: 2369660057125146727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_10
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 92
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb585cbe4461ad1f0800000000000000
+      internalID: -1019477880376818242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_11
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 109
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45957eb2b469a4aa0800000000000000
+      internalID: -6175958689381918380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_12
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 39
+        width: 164
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4904c5881f2aca790800000000000000
+      internalID: -7517454519729635180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_13
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 39
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4fdeaa01d3b4d460800000000000000
+      internalID: 7265629809264222030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_14
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 5
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a07cab2ae445c90800000000000000
+      internalID: -7182029044923823552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_15
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 15
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2c5cb5b1722da60800000000000000
+      internalID: 7697257711586886310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_16
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 36
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa737e365fe96c7a0800000000000000
+      internalID: -6357219047206602833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_17
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 52
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 684a3161f09734ac0800000000000000
+      internalID: -3872118148906638202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_18
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 46
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2270835c5491fa30800000000000000
+      internalID: 4247339047845917231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_19
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 24
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebce69537f0c6f5b0800000000000000
+      internalID: -5334864540585235266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_20
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 19
+        width: 36
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a54e9461c8992570800000000000000
+      internalID: 8442446932866909607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cair_21
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 24
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87647780e24031110800000000000000
+      internalID: 1230331718959318648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cair_0: -8986567067357871097
+      cair_1: 8071397990729420958
+      cair_10: -1019477880376818242
+      cair_11: -6175958689381918380
+      cair_12: -7517454519729635180
+      cair_13: 7265629809264222030
+      cair_14: -7182029044923823552
+      cair_15: 7697257711586886310
+      cair_16: -6357219047206602833
+      cair_17: -3872118148906638202
+      cair_18: 4247339047845917231
+      cair_19: -5334864540585235266
+      cair_2: -8018855767104834498
+      cair_20: 8442446932866909607
+      cair_21: 1230331718959318648
+      cair_3: 2020406275936721836
+      cair_4: -7565546711355873569
+      cair_5: -3418332099266216402
+      cair_6: 5547543566805788138
+      cair_7: -8488129186972313480
+      cair_8: -3111634079224845655
+      cair_9: 2369660057125146727
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
