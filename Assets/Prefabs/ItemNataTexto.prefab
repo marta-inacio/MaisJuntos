@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5500285065014949903
+--- !u!1 &24748279535260609
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,111 +8,35 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5159208697878685834}
-  - component: {fileID: 3789197962642056101}
-  - component: {fileID: 2051697465917768324}
+  - component: {fileID: 3859437272534295381}
   m_Layer: 5
-  m_Name: Image
+  m_Name: ItemNataTexto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &5159208697878685834
+--- !u!224 &3859437272534295381
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5500285065014949903}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 766038008929801330}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: 12}
-  m_SizeDelta: {x: 366.38, y: 284.3509}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &3789197962642056101
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5500285065014949903}
-  m_CullTransparentMesh: 1
---- !u!114 &2051697465917768324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5500285065014949903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -5450752922008249188, guid: b27411f16dabfae49bd55382474c6b53, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!1 &6423022355349831815
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 766038008929801330}
-  m_Layer: 5
-  m_Name: ItemNata
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &766038008929801330
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6423022355349831815}
+  m_GameObject: {fileID: 24748279535260609}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8336568511801568292}
-  - {fileID: 5159208697878685834}
+  - {fileID: 7461897573065768545}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -280.2, y: -16.484}
-  m_SizeDelta: {x: 560.4, y: 600.97}
+  m_AnchoredPosition: {x: 308.98, y: 6.08}
+  m_SizeDelta: {x: 531.68, y: 555.84}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &7966977872194322500
+--- !u!1 &8161818254847955399
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,50 +44,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8336568511801568292}
-  - component: {fileID: 1909314954265154750}
-  - component: {fileID: 5016629142342788027}
+  - component: {fileID: 7461897573065768545}
+  - component: {fileID: 373096435528135856}
+  - component: {fileID: 3637096645953104953}
   m_Layer: 5
-  m_Name: Nome
+  m_Name: Curiosidade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &8336568511801568292
+--- !u!224 &7461897573065768545
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7966977872194322500}
+  m_GameObject: {fileID: 8161818254847955399}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 766038008929801330}
+  m_Father: {fileID: 3859437272534295381}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -28, y: 242}
-  m_SizeDelta: {x: 450.443, y: 50}
-  m_Pivot: {x: 0.49999985, y: 0.5}
---- !u!222 &1909314954265154750
+  m_AnchoredPosition: {x: -10, y: -18}
+  m_SizeDelta: {x: 487.8802, y: 550.8949}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &373096435528135856
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7966977872194322500}
+  m_GameObject: {fileID: 8161818254847955399}
   m_CullTransparentMesh: 1
---- !u!114 &5016629142342788027
+--- !u!114 &3637096645953104953
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7966977872194322500}
+  m_GameObject: {fileID: 8161818254847955399}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -177,7 +101,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pastel de Nata
+  m_text: "O pastel de nata foi criado por monges no in\xEDcio do s\xE9culo XIX,
+    que aproveitavam as gemas de ovo que sobravam do uso de claras para engomar roupas,
+    uma pr\xE1tica comum nos conventos. \n\r\nAp\xF3s a Revolu\xE7\xE3o Liberal e
+    o encerramento das ordens religiosas, a receita saiu do convento, e em 1837 iniciou-se
+    a venda dos past\xE9is na zona de Bel\xE9m. \n\r\nEmbora os \"past\xE9is de Bel\xE9m\"
+    sejam os originais e guardem a receita em segredo, a designa\xE7\xE3o \"pastel
+    de nata\" espalhou-se, tornando-se um \xEDcone nacional.\n\r\nAtualmente, \xE9
+    um doce de renome mundial, eleito frequentemente como uma das melhores iguarias
+    gastron\xF3micas do mundo."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 00bf27233150ece42ac8b8bc7fa83ad1, type: 2}
   m_sharedMaterial: {fileID: -8630296961629271134, guid: 00bf27233150ece42ac8b8bc7fa83ad1, type: 2}
@@ -204,15 +136,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -243,7 +175,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -2.9821777, y: 0, z: 0, w: 0}
+  m_margin: {x: -0.39782715, y: 0, z: -0.9871216, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

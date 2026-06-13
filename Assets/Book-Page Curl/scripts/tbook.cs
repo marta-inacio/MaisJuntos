@@ -1,29 +1,24 @@
-﻿//The implementation is based on this article:http://rbarraza.com/html5-canvas-pageflip/
+//The implementation is based on this article:http://rbarraza.com/html5-canvas-pageflip/
 //As the rbarraza.com website is not live anymore you can get an archived version from web archive 
 //or check an archived version that I uploaded on my website: https://dandarawy.com/html5-canvas-pageflip/
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
+using System.Collections;
 using UnityEngine.UI;
-public enum FlipMode
-{
-    RightToLeft,
-    LeftToRight
-}
+using UnityEngine.Events;
+//public enum FlipMode
+//{
+//    RightToLeft,
+//    LeftToRight
+//}
 [ExecuteInEditMode]
-public class Book : MonoBehaviour
+public class t : MonoBehaviour
 {
     public Canvas canvas;
     [SerializeField]
     RectTransform BookPanel;
     public Sprite background;
     public Sprite[] bookPages;
-
-    //LISTA COM OS GAMEOBJECTS QUE QUEREMOS
-    public List<GameObject> pageObjects;
-
     public bool interactable = true;
     public bool enableShadowEffect = true;
     //represent the index of the sprite shown in the right page
@@ -77,9 +72,6 @@ public class Book : MonoBehaviour
     {
         if (!canvas) canvas = GetComponentInParent<Canvas>();
         if (!canvas) Debug.LogError("Book should be a child to canvas");
-
-        //Fazer a primeira página aparecer logo
-        UpdatePageObjects();
 
         UpdateSprites();
         CalcCurlCriticalPoints();
@@ -283,20 +275,7 @@ public class Book : MonoBehaviour
     }
     public void DragRightPageToPoint(Vector3 point)
     {
-
-        if (currentCoroutine != null)
-        {
-            StopCoroutine(currentCoroutine);
-            currentCoroutine = null;
-        }
-
-        if (currentPage >= bookPages.Length - 1)
-        {
-            //Debug.Log($"[Book] Não faz mais: bookPagesLenght={bookPages.Length}, currentPage={currentPage}, max={bookPages.Length - 1}");
-            return;
-        }
-        //Debug.Log($"saí do if e não fiz return");
-
+        if (currentPage >= bookPages.Length) return;
         pageDragging = true;
         mode = FlipMode.RightToLeft;
         f = point;
@@ -340,8 +319,6 @@ public class Book : MonoBehaviour
 
         Right.gameObject.SetActive(true);
         Right.transform.position = LeftNext.transform.position;
-
-        //Debug.Log($"currentPage={currentPage} | Total={bookPages.Length}");
         Right.sprite = bookPages[currentPage - 1];
 
         Right.transform.eulerAngles = new Vector3(0, 0, 0);
@@ -375,11 +352,6 @@ public class Book : MonoBehaviour
         if (pageDragging)
         {
             pageDragging = false;
-
-            foreach (var obj in pageObjects)
-                obj.SetActive(false);
-
-
             float distanceToLeft = Vector2.Distance(c, ebl);
             float distanceToRight = Vector2.Distance(c, ebr);
             if (distanceToRight < distanceToLeft && mode == FlipMode.RightToLeft)
@@ -404,33 +376,12 @@ public class Book : MonoBehaviour
         else
             currentCoroutine = StartCoroutine(TweenTo(ebr, 0.15f, () => { Flip(); }));
     }
-
-    void UpdatePageObjects()
-    {
-        foreach (var obj in pageObjects)
-            obj.SetActive(false);
-
-        int leftPage = currentPage;
-        int rightPage = currentPage + 1;
-
-        if (leftPage >= 0 && leftPage < pageObjects.Count)
-            pageObjects[leftPage].SetActive(true);
-
-        if (rightPage >= 0 && rightPage < pageObjects.Count)
-            pageObjects[rightPage].SetActive(true);
-    }
-
-
     void Flip()
     {
-
         if (mode == FlipMode.RightToLeft)
             currentPage += 2;
         else
             currentPage -= 2;
-
-        //Debug.Log($"Página atual: {currentPage}");
-
         LeftNext.transform.SetParent(BookPanel.transform, true);
         Left.transform.SetParent(BookPanel.transform, true);
         LeftNext.transform.SetParent(BookPanel.transform, true);
@@ -438,15 +389,11 @@ public class Book : MonoBehaviour
         Right.gameObject.SetActive(false);
         Right.transform.SetParent(BookPanel.transform, true);
         RightNext.transform.SetParent(BookPanel.transform, true);
-
         UpdateSprites();
-
         Shadow.gameObject.SetActive(false);
         ShadowLTR.gameObject.SetActive(false);
         if (OnFlip != null)
             OnFlip.Invoke();
-        
-        UpdatePageObjects();
     }
     public void TweenBack()
     {
