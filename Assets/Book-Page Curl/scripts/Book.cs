@@ -377,7 +377,7 @@ public class Book : MonoBehaviour
             pageDragging = false;
 
             foreach (var obj in pageObjects)
-                obj.SetActive(false);
+                if (obj != null) obj.SetActive(false);
 
 
             float distanceToLeft = Vector2.Distance(c, ebl);
@@ -407,8 +407,9 @@ public class Book : MonoBehaviour
 
     void UpdatePageObjects()
     {
+
         foreach (var obj in pageObjects)
-            obj.SetActive(false);
+            if (obj != null) obj.SetActive(false);
 
         int leftPage = currentPage;
         int rightPage = currentPage + 1;
