@@ -16,21 +16,6 @@ public class Menu : MonoBehaviour
 
     void Start()
     {
-        //if (PlayerPrefs.GetInt("PrimeiraVez", 1) == 1)
-        //{
-        //    // Primeira execução
-        //    menuInicial.SetActive(true);
-        //    menuPrincipal.SetActive(false);
-
-        //    PlayerPrefs.SetInt("PrimeiraVez", 0);
-        //    PlayerPrefs.Save();
-        //}
-        //else
-        //{
-        //    // Já abriu o jogo anteriormente
-        //    menuInicial.SetActive(false);
-        //    menuPrincipal.SetActive(true);
-        //}
 
         switch (InfoJogo.menu)
         {
@@ -74,12 +59,30 @@ public class Menu : MonoBehaviour
 
     public void AbreJogo()
     {
-        SceneManager.LoadScene("Jogo2");
+        SceneManager.LoadScene("Jogo");
     }
 
     public void FechaMenu()
     {
         SceneManager.UnloadSceneAsync("Menu");
-        Time.timeScale = 1f;
+
+        Timer timer = FindFirstObjectByType<Timer>();
+
+        if (timer != null)
+        {
+            Debug.Log("enteiraai");
+            timer.Retomar();
+        }
     }
+
+    //public void MusicaVolume(Slider MV)
+    //{
+    //    print("Volume da música:" + MV.value);
+    //}
+
+    //public void FXVolume(Slider FX)
+    //{
+    //    print("Volume FX:" + FX.value);
+    //}
+
 }

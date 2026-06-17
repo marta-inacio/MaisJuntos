@@ -134,12 +134,12 @@ TextureImporter:
       name: baixo_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 129
-        width: 31
-        height: 29
+        x: 0
+        y: 0
+        width: 211
+        height: 184
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -156,12 +156,12 @@ TextureImporter:
       name: baixo_1
       rect:
         serializedVersion: 2
-        x: 24
-        y: 125
-        width: 22
-        height: 24
+        x: 211
+        y: 0
+        width: 211
+        height: 184
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -178,12 +178,12 @@ TextureImporter:
       name: baixo_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 18
-        width: 107
-        height: 136
+        x: 422
+        y: 0
+        width: 211
+        height: 184
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -196,99 +196,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: baixo_3
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 18
-        width: 106
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ab4e53fd87dc929c0800000000000000
-      internalID: -3951401279016278854
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: baixo_4
-      rect:
-        serializedVersion: 2
-        x: 471
-        y: 22
-        width: 106
-        height: 136
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3e58bbac43898c640800000000000000
-      internalID: 5100493930504095203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: baixo_5
-      rect:
-        serializedVersion: 2
-        x: 562
-        y: 134
-        width: 31
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: db06131342d58b6a0800000000000000
-      internalID: -6433289657673228099
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: baixo_6
-      rect:
-        serializedVersion: 2
-        x: 564
-        y: 130
-        width: 22
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 95bfe2ed2c9039f60800000000000000
-      internalID: 8039780492342393689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8c719e591bd091e4397af72ba9543a8d
     internalID: 0
     vertices: []
     indices: 
@@ -296,15 +208,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":211.0,"y":184.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       baixo_0: -3998717811462945979
       baixo_1: -4518373971391919217
       baixo_2: -795909051405400595
-      baixo_3: -3951401279016278854
-      baixo_4: 5100493930504095203
-      baixo_5: -6433289657673228099
-      baixo_6: 8039780492342393689
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

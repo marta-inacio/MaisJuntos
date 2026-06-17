@@ -125,12 +125,12 @@ TextureImporter:
       name: falar_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 11
-        width: 124
-        height: 162
+        x: 0
+        y: 0
+        width: 211
+        height: 184
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: falar_1
       rect:
         serializedVersion: 2
-        x: 233
-        y: 11
-        width: 121
-        height: 162
+        x: 211
+        y: 0
+        width: 211
+        height: 184
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -165,55 +165,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: falar_2
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 121
-        width: 29
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 18f0da54c04f49fe0800000000000000
-      internalID: -1183052468545843327
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: falar_3
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 100
-        width: 21
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 571e7866afe552820800000000000000
-      internalID: 2892822765210427765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 77f6d6fe01bd71542b98c0fcc4ac9c90
     internalID: 0
     vertices: []
     indices: 
@@ -221,12 +177,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":211.0,"y":184.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       falar_0: 4385321517021666898
       falar_1: -9075228446809953690
-      falar_2: -1183052468545843327
-      falar_3: 2892822765210427765
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
