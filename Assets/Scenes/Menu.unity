@@ -8665,13 +8665,49 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 933871154}
     m_Modifications:
-    - target: {fileID: 85945574930635715, guid: 133c4e7f21e6eb549ba04831de680af6, type: 3}
+    - target: {fileID: 479326225662276262, guid: 133c4e7f21e6eb549ba04831de680af6, type: 3}
       propertyPath: m_Name
-      value: Medalha
+      value: Titulo
       objectReference: {fileID: 0}
     - target: {fileID: 654042527281120885, guid: 133c4e7f21e6eb549ba04831de680af6, type: 3}
       propertyPath: m_Name
       value: ItemVoluntariado
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454018914181430899, guid: 133c4e7f21e6eb549ba04831de680af6, type: 3}
+      propertyPath: m_text
+      value: "Cartinha para crian\xE7a"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454018914181430899, guid: 133c4e7f21e6eb549ba04831de680af6, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454018914181430899, guid: 133c4e7f21e6eb549ba04831de680af6, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.70980394
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454018914181430899, guid: 133c4e7f21e6eb549ba04831de680af6, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.45098042
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454018914181430899, guid: 133c4e7f21e6eb549ba04831de680af6, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.24705884
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454018914181430899, guid: 133c4e7f21e6eb549ba04831de680af6, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454018914181430899, guid: 133c4e7f21e6eb549ba04831de680af6, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4290081599
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149662861203515088, guid: 133c4e7f21e6eb549ba04831de680af6, type: 3}
+      propertyPath: m_Name
+      value: Nome
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452423969587982784, guid: 133c4e7f21e6eb549ba04831de680af6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 237
       objectReference: {fileID: 0}
     - target: {fileID: 4727386549285611723, guid: 133c4e7f21e6eb549ba04831de680af6, type: 3}
       propertyPath: m_Pivot.x
@@ -8753,9 +8789,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6222759699730358784, guid: 133c4e7f21e6eb549ba04831de680af6, type: 3}
-      propertyPath: m_text
-      value: Voluntariado x
+    - target: {fileID: 6117262283342974061, guid: 133c4e7f21e6eb549ba04831de680af6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 180.64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

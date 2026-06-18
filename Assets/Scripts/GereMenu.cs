@@ -66,12 +66,12 @@ public class Menu : MonoBehaviour
     {
         SceneManager.UnloadSceneAsync("Menu");
 
-        Timer timer = FindFirstObjectByType<Timer>();
+        ControlarNivel timer = FindFirstObjectByType<ControlarNivel>();
 
         if (timer != null)
         {
             Debug.Log("enteiraai");
-            timer.Retomar();
+            timer.RetomarJogo();
         }
     }
 
