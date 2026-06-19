@@ -94,7 +94,7 @@ public class Player : MonoBehaviour
 
         Vector3 velocidade = dir * Velocidade;
 
-        while (duracaoSalto < 2f)
+        while (duracaoSalto < 1.5f)
         {
             duracaoSalto += Time.deltaTime;
 
@@ -110,9 +110,22 @@ public class Player : MonoBehaviour
 
         salto = false;
     }
-   
 
+    public void AlteraVelocidade(float tempo, float constanteMudança)
+    {
+        StartCoroutine(AlteraVelocidadeRoutine(tempo, constanteMudança));
+    }
 
+    private IEnumerator AlteraVelocidadeRoutine(float tempo, float constanteMudança)
+    {
+        float VelocidadeInicial = Velocidade;
+
+        Velocidade = Velocidade * constanteMudança;
+
+        yield return new WaitForSeconds(tempo);
+
+        Velocidade = VelocidadeInicial;
+    }
 
 
 }

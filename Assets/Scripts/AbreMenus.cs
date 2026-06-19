@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -7,34 +8,57 @@ using UnityEngine.UI;
 
 public class AbreMenus : MonoBehaviour
 {
+    //void Start()
+    //{
+    //    Scene menuScene = SceneManager.GetSceneByName("Menu");
+    //}
+
+    void LoadMenu()
+    {
+        SceneManager.LoadScene("Menu", LoadSceneMode.Additive); 
+    }
+
+    void UnloadMenu()
+    {
+        if (SceneManager.GetSceneByName("Menu").isLoaded)
+        {
+            SceneManager.UnloadSceneAsync("Menu");
+        }
+        
+    }
     public void AbreMenuPrincipal()
     {
+        UnloadMenu();
         InfoJogo.menu = 1;
-        SceneManager.LoadScene("Menu", LoadSceneMode.Additive);
+        LoadMenu();
     }
 
     public void AbrirColecao()
     {
+        UnloadMenu();
         InfoJogo.menu = 2;
-        SceneManager.LoadScene("Menu", LoadSceneMode.Additive);
+        LoadMenu();
     }
 
     public void AbrePaises()
     {
+        UnloadMenu();
         InfoJogo.menu = 3;
-        SceneManager.LoadScene("Menu", LoadSceneMode.Additive);
+        LoadMenu();
     }
 
     public void AbreVoluntariado()
     {
+        UnloadMenu();
         InfoJogo.menu = 4;
-        SceneManager.LoadScene("Menu", LoadSceneMode.Additive);
+        LoadMenu();
     }
 
     public void AbreDefinicoes()
     {
+        UnloadMenu();
         InfoJogo.menu = 5;
-        SceneManager.LoadScene("Menu", LoadSceneMode.Additive);
+        LoadMenu();
     }
 
     public void AbreHospital()

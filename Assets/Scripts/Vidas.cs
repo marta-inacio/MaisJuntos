@@ -48,6 +48,7 @@ public class Vidas : MonoBehaviour
                 vidaVazia1.SetActive(true);
 
                 controlarNivel.PerderJogo();
+                //controlarNivel.VencerJogo();
                 break;
 
             case 1:
@@ -85,21 +86,21 @@ public class Vidas : MonoBehaviour
 
         switch (vidas)
         {
-            case 1:
+            case 2:
                 vida2.SetActive(true);
                 vidaVazia2.SetActive(false);
                 break;
 
-            case 2:
+            case 3:
                 vida3.SetActive(true);
                 vidaVazia3.SetActive(false);
                 break;
 
-            case 3:
+            case 4:
                 vida4.SetActive(true);
                 break;
 
-            case 4:
+            case 5:
                 vida5.SetActive(true);
                 break;
 

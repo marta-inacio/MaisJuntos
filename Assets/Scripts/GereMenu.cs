@@ -13,8 +13,12 @@ public class Menu : MonoBehaviour
     public GameObject Paises;
     public GameObject Voluntariado;
     public GameObject Definicoes;
+    public GameObject PopUpVazio;
 
-    void Start()
+    //foto voluntarido
+    public RawImage foto;
+
+    void Update()
     {
 
         switch (InfoJogo.menu)
@@ -40,7 +44,21 @@ public class Menu : MonoBehaviour
             case 4:
                 Debug.Log("Abriu voluntariado");
                 menuInicial.SetActive(false);
-                Voluntariado.SetActive(true);
+
+                if (InfoJogo.voluntariado)
+                {
+                    //Debug.Log("voluntariod" + InfoJogo.voluntariado);
+                    if (InfoJogo.fotoCapturada != null)
+                    {
+                        foto.texture = InfoJogo.fotoCapturada;
+                    }
+                    Voluntariado.SetActive(true);
+                }
+                else
+                {
+                    //Debug.Log("vazio" + InfoJogo.voluntariado);
+                    PopUpVazio.SetActive(true);
+                }
                 break;
 
             case 5:
@@ -50,6 +68,7 @@ public class Menu : MonoBehaviour
                 break;
         }
     }
+
 
     public void Sai()
     {
@@ -70,7 +89,7 @@ public class Menu : MonoBehaviour
 
         if (timer != null)
         {
-            Debug.Log("enteiraai");
+            //Debug.Log("enteiraai");
             timer.RetomarJogo();
         }
     }

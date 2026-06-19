@@ -11,8 +11,19 @@ public class Timer : MonoBehaviour
     public TMP_Text timerText;
     public float gameTime;
 
+    //tempo powerUpseDowns
+    private float tempoExtra = 0f;
+
     private bool stopTimer;
     private float startTime;
+
+    public ControlarNivel controlarNivel;
+
+    //slider pisca perto do fim
+    public Image sliderFill;
+    private bool entreiTerminar;
+
+    private Coroutine rotinaTempo;
 
     void Start()
     {
@@ -21,19 +32,44 @@ public class Timer : MonoBehaviour
 
         slider.maxValue = gameTime;
         slider.value = gameTime;
+
+        entreiTerminar = false;
     }
 
     void Update()
     {
+    
+
         if (!SceneManager.GetSceneByName("JogoNivel1").isLoaded) return;
         if (stopTimer) return;
 
-        float time = gameTime - (Time.time - startTime);
+        float time = gameTime + tempoExtra - (Time.time - startTime);
 
         if (time <= 0)
         {
+            controlarNivel.PerderJogo();
             time = 0;
             stopTimer = true;
+        }
+
+        //a 15 segundos pisca 
+        if (time < 15 && !entreiTerminar)
+        {
+            entreiTerminar = true;
+            rotinaTempo = StartCoroutine(TerminarTempo());
+        }
+
+        if (time >= 15 && entreiTerminar)
+        {
+            entreiTerminar = false;
+
+            if (rotinaTempo != null)
+            {
+                StopCoroutine(rotinaTempo);
+                rotinaTempo = null;
+            }
+
+            sliderFill.color = Color.white;
         }
 
         int minutes = Mathf.FloorToInt(time / 60);
@@ -53,4 +89,26 @@ public class Timer : MonoBehaviour
     //    stopTimer = false;
     //    startTime = Time.time - (gameTime - slider.value);
     //}
+
+    public void GanhaPerdeTempo(float tempoSegundos)
+    {
+        tempoExtra += tempoSegundos;
+
+        entreiTerminar = false;
+        StopCoroutine(rotinaTempo);
+
+    }
+
+    IEnumerator TerminarTempo()
+    {
+        while (!stopTimer)
+        {
+            sliderFill.color = Color.red;
+            yield return new WaitForSeconds(1f);
+
+            sliderFill.color = Color.white;
+            yield return new WaitForSeconds(1f);
+
+        }
+    }
 }

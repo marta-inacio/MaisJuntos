@@ -27,7 +27,10 @@ public class ControlarNivel : MonoBehaviour
     }
 
     public void VencerJogo()
-    {      
+    {
+        PausarJogo();
+        InfoJogo.missao1 = 100;
+        InfoJogo.voluntariado = true;
         AbrirPopUp(popUpGanhar);
     }
 

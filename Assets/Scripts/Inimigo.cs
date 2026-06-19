@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 public class Inimigo : MonoBehaviour
@@ -8,12 +8,18 @@ public class Inimigo : MonoBehaviour
     public GameObject Jogador;
     public SpriteRenderer spritePlayer;
     public GameObject PerderVida;
+
     Vector3 PosAlvo;
+    bool ModoPrincipal = true;
+
+    //colidir e parar durante5 segundos
+    bool colidiu = false;
+    private Vector3 posicaoColisao;
+
 
     public Vidas vidas;
 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Jogador = GameObject.Find("Player");
@@ -22,14 +28,41 @@ public class Inimigo : MonoBehaviour
         spritePlayer = Jogador.GetComponentInChildren<SpriteRenderer>();
 
         vidas = FindFirstObjectByType<Vidas>();
+
+        PosAlvo = Jogador.transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        PosAlvo = Jogador.transform.position;
-        // //m�todo B move towards
-        this.transform.position = Vector3.MoveTowards(this.transform.position, PosAlvo, Velocidade * Time.deltaTime);
+        if (colidiu)
+        {
+            transform.position = posicaoColisao;
+            return;
+        }
+
+
+        if (ModoPrincipal)
+        {
+            PosAlvo = Jogador.transform.position;
+        }
+
+        //método c
+        transform.right = (PosAlvo - transform.position).normalized;
+        this.transform.position += this.transform.right * Velocidade * Time.deltaTime;
+
+        Debug.DrawLine(this.transform.position, PosAlvo);
+
+
+        if ((PosAlvo - this.transform.position).magnitude < 0.1f)
+        {
+            PosAlvo = Jogador.transform.position;
+            ModoPrincipal = true;
+        }
+
+        if (ModoPrincipal)
+        {
+            PosAlvo = Jogador.transform.position;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -42,16 +75,33 @@ public class Inimigo : MonoBehaviour
             StartCoroutine(MudarDeCorDano());
             vidas.PerderVida();
 
-            //collision.gameObject.GetComponent<Animator>().Play("MudaCor");
-            //this.GetComponent<AudioSource>().Play();
+            StartCoroutine(PausaDepoisDeBater());
+        }
+        else { 
+            PosAlvo = this.transform.position + transform.up * 2;
+            ModoPrincipal = false;
         }
     }
 
-    //ficar a vermelho na colis�o
+    //ficar a vermelho na colisão
     IEnumerator MudarDeCorDano()
     {
         spritePlayer.color = Color.red;
         yield return new WaitForSeconds(0.15f);
         spritePlayer.color = Color.white;
+    }
+
+    //parar durante uns segundos antes de ir atrás tirar mais vida
+    IEnumerator PausaDepoisDeBater()
+    {
+        //guardar pos colisaõ
+        colidiu = true;
+        posicaoColisao = transform.position;
+
+        yield return new WaitForSeconds(5f);
+
+        colidiu = false;
+        ModoPrincipal = true;
+        PosAlvo = Jogador.transform.position;
     }
 }
