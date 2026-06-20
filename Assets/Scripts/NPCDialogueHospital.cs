@@ -40,8 +40,12 @@ public class NpcDialogueHospital : MonoBehaviour
 
     [Header("Objeto entregue")]
     public bool objetoEntregue = false;
+    private int contador = 0;
 
-    void Start()
+    [Header("PowerUp")]
+    public PowerUps powerUp;
+
+    void OnEnable()
     {
         dialoguePanelNpc.SetActive(false);
         dialoguePanelPlayer.SetActive(false);
@@ -93,6 +97,9 @@ public class NpcDialogueHospital : MonoBehaviour
     public void StartDialogue()
     {
         if (InfoJogo.isDialogueActive)
+            return;
+
+        if (contador == 1)
             return;
 
         npcIndex = 0;
@@ -225,10 +232,13 @@ public class NpcDialogueHospital : MonoBehaviour
         if (popUp != null && objetoEntregue)
         {
             popUp.Show(nome, imagem, descricao, 3f);
+            contador++;
+
         }
         else
         {
             popUpAjudar.SetActive(true);
+            powerUp.PlayPowerUp("Desenho");
         }
 
     }
