@@ -40,7 +40,7 @@ public class Items: MonoBehaviour
         //Debug.Log("entrei no trigger");
         if (other.CompareTag("Player"))
         {
-            popUp.Show("Encontraste", imagem, nome);
+            popUp.Show("Encontraste", imagem, nome, 0.8f);
 
             PreencheSlider(nome);
 

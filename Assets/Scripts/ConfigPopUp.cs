@@ -24,13 +24,26 @@ public class ConfigPopUp : MonoBehaviour
         {
             StopCoroutine(hideRoutine);
         }
-
-        hideRoutine = StartCoroutine(HideAfterTime());
     }
 
-    private IEnumerator HideAfterTime()
+    public void Show(string n, Sprite img, string desc, float time)
     {
-        yield return new WaitForSeconds(0.5f);
+        popUp.SetActive(true);
+
+        nome.text = n;
+        descricao.text = desc;
+        imagem.sprite = img;
+
+        if (hideRoutine != null)
+        {
+            StopCoroutine(hideRoutine);
+        }
+
+        hideRoutine = StartCoroutine(HideAfterTime(time));
+    }
+    private IEnumerator HideAfterTime( float time)
+    {
+        yield return new WaitForSeconds(time);
         popUp.SetActive(false);
     }
 }

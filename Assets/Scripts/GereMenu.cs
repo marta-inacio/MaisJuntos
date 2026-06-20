@@ -30,9 +30,15 @@ public class Menu : MonoBehaviour
                 break;
 
             case 2:
-                Debug.Log("Abriu coleção");
                 menuInicial.SetActive(false);
-                Colecao.SetActive(true);
+                if (InfoJogo.nata || InfoJogo.calcada || InfoJogo.guitarra)
+                {
+                    Colecao.SetActive(true);
+                }
+                else
+                {
+                    PopUpVazio.SetActive(true);
+                }
                 break;
 
             case 3:

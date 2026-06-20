@@ -15,7 +15,9 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
 
     //salto
-    private bool salto;
+    public bool salto;
+    //obstaculo
+    public bool caiu = false;
 
     void Start()
     {
@@ -25,6 +27,18 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        //testar remover depois
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            cliqueSalto();
+        }
+
+        if (caiu)
+        {
+            return;
+        }
+
+
         if (!salto)
         {
             //joystick dir
@@ -55,12 +69,30 @@ public class Player : MonoBehaviour
     }
 
 
+
+
     //chamar o clique do bota aqui que tem d ser courotine pq while
     public void cliqueSalto()
     {
         StartCoroutine(Saltar());
     }
 
+    //cair
+    public void Cair()
+    {
+        StartCoroutine(CairRoutine());
+    }
+
+    private IEnumerator CairRoutine()
+    {
+        caiu = true;
+
+        anim.Play("cair");
+
+        yield return new WaitForSeconds(1f);
+
+        caiu = false;
+    }
 
     //saltar
     IEnumerator Saltar()
@@ -98,7 +130,7 @@ public class Player : MonoBehaviour
         {
             duracaoSalto += Time.deltaTime;
 
-            rb.linearVelocity = new Vector2(velocidade.x, velocidade.y) * 1.5f;
+            rb.linearVelocity = new Vector2(velocidade.x, velocidade.y) * 1.1f;
 
             yield return null;
         }

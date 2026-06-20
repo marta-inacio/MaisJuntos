@@ -2696,11 +2696,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 766038008929801330, guid: 8507a767f13737c4592033d4239808d0, type: 3}
   m_PrefabInstance: {fileID: 550816246}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &550816248 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6423022355349831815, guid: 8507a767f13737c4592033d4239808d0, type: 3}
-  m_PrefabInstance: {fileID: 550816246}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &576892577 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4569877713733467150, guid: 133c4e7f21e6eb549ba04831de680af6, type: 3}
@@ -3263,6 +3258,20 @@ PrefabInstance:
     - target: {fileID: 24748279535260609, guid: 4cb901e10733e7f4d8042cff9820b66d, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3637096645953104953, guid: 4cb901e10733e7f4d8042cff9820b66d, type: 3}
+      propertyPath: m_text
+      value: "A guitarra portuguesa \xE9 um cordofone com uma caixa de resson\xE2ncia
+        em forma de p\xEAra e 12 cordas met\xE1licas. A sua hist\xF3ria remonta \xE0
+        Idade M\xE9dia, evoluindo a partir da c\xEDtola. No s\xE9culo XVIII, fundiu-se
+        com elementos da guitarra inglesa para ganhar a sua forma atual, tornando-se
+        o cora\xE7\xE3o da m\xFAsica portuguesa.\r\nDeriva dos cistres europeus,
+        sendo que a guitarra mais antiga do mundo foi constru\xEDda em Lisboa, em
+        1581, por Belchior Dias. \n\nInicialmente um instrumento popular em sal\xF5es
+        e serenatas, mas a partir de meados do s\xE9culo XIX, consolidou-se como
+        o elemento central no acompanhamento do Fado.\n\r\nO instrumento deixou de
+        ser apenas de acompanhamento e ganhou um vasto report\xF3rio a solo, tornando-o
+        imortalizado.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 3859437272534295381, guid: 4cb901e10733e7f4d8042cff9820b66d, type: 3}
       propertyPath: m_Pivot.x
@@ -4575,6 +4584,19 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3637096645953104953, guid: 4cb901e10733e7f4d8042cff9820b66d, type: 3}
+      propertyPath: m_text
+      value: "A cal\xE7ada portuguesa \xE9 um dos elementos mais emblem\xE1ticos
+        do patrim\xF3nio nacional, um revestimento de piso feito com pequenas pedras
+        naturais, geralmente calc\xE1rio branco e basalto preto. \n\r\nSurgiu em
+        meados do s\xE9culo XIX, mais concretamente em Lisboa em 1842. O primeiro
+        grande projeto e o padr\xE3o mais ic\xF3nico (\"Mar Largo\") foram aplicados
+        na Pra\xE7a do Rossio por mestres calceteiros e prisioneiros. \n\nA t\xE9cnica
+        funde influ\xEAncias romanas (que j\xE1 pavimentavam estradas) e mouriscas
+        (pela vertente ornamental e geom\xE9trica).\r\nColocadas manualmente, os
+        diferentes tipos de cal\xE7ada portuguesa formam padr\xF5es e mosaicos decorativos,
+        destacando-se pela sua beleza e singularidade \xFAnicas. "
+      objectReference: {fileID: 0}
     - target: {fileID: 3859437272534295381, guid: 4cb901e10733e7f4d8042cff9820b66d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5330,11 +5352,6 @@ PrefabInstance:
 --- !u!224 &1258447372 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3859437272534295381, guid: 4cb901e10733e7f4d8042cff9820b66d, type: 3}
-  m_PrefabInstance: {fileID: 1258447371}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1258447373 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 24748279535260609, guid: 4cb901e10733e7f4d8042cff9820b66d, type: 3}
   m_PrefabInstance: {fileID: 1258447371}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1270492809
@@ -6996,11 +7013,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4200185176156003331, guid: e9bab6b0bee8f334c92aaa16365dbe64, type: 3}
       propertyPath: bookPages.Array.size
-      value: 14
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4200185176156003331, guid: e9bab6b0bee8f334c92aaa16365dbe64, type: 3}
       propertyPath: pageObjects.Array.size
-      value: 14
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4200185176156003331, guid: e9bab6b0bee8f334c92aaa16365dbe64, type: 3}
       propertyPath: 'bookPages.Array.data[0]'
@@ -7069,11 +7086,11 @@ PrefabInstance:
     - target: {fileID: 4200185176156003331, guid: e9bab6b0bee8f334c92aaa16365dbe64, type: 3}
       propertyPath: 'pageObjects.Array.data[2]'
       value: 
-      objectReference: {fileID: 550816248}
+      objectReference: {fileID: 1645401041}
     - target: {fileID: 4200185176156003331, guid: e9bab6b0bee8f334c92aaa16365dbe64, type: 3}
       propertyPath: 'pageObjects.Array.data[3]'
       value: 
-      objectReference: {fileID: 1258447373}
+      objectReference: {fileID: 1089470983}
     - target: {fileID: 4200185176156003331, guid: e9bab6b0bee8f334c92aaa16365dbe64, type: 3}
       propertyPath: 'pageObjects.Array.data[4]'
       value: 
@@ -9070,14 +9087,14 @@ RectTransform:
   - {fileID: 202812614}
   - {fileID: 7681576347285743187}
   - {fileID: 679147992925994948}
-  - {fileID: 550816247}
-  - {fileID: 1258447372}
+  - {fileID: 1645401040}
+  - {fileID: 1089470982}
   - {fileID: 1394178766}
   - {fileID: 669079894}
   - {fileID: 1732353939}
   - {fileID: 1225404725}
-  - {fileID: 1645401040}
-  - {fileID: 1089470982}
+  - {fileID: 550816247}
+  - {fileID: 1258447372}
   - {fileID: 825490134}
   - {fileID: 1750625653}
   - {fileID: 1439621598}

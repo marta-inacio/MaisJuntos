@@ -405,20 +405,59 @@ public class Book : MonoBehaviour
             currentCoroutine = StartCoroutine(TweenTo(ebr, 0.15f, () => { Flip(); }));
     }
 
+    //void UpdatePageObjects()
+    //{
+
+    //    foreach (var obj in pageObjects)
+    //        if (obj != null) obj.SetActive(false);
+
+    //    int leftPage = currentPage;
+    //    int rightPage = currentPage + 1;
+
+    //    if (leftPage >= 0 && leftPage < pageObjects.Count)
+    //        pageObjects[leftPage].SetActive(true);
+
+    //    if (rightPage >= 0 && rightPage < pageObjects.Count)
+    //        pageObjects[rightPage].SetActive(true);
+    //}
+
     void UpdatePageObjects()
     {
-
         foreach (var obj in pageObjects)
             if (obj != null) obj.SetActive(false);
 
         int leftPage = currentPage;
         int rightPage = currentPage + 1;
 
-        if (leftPage >= 0 && leftPage < pageObjects.Count)
-            pageObjects[leftPage].SetActive(true);
+        if (IsPageAllowed(leftPage))
+            if (leftPage >= 0 && leftPage < pageObjects.Count)
+                pageObjects[leftPage].SetActive(true);
 
-        if (rightPage >= 0 && rightPage < pageObjects.Count)
-            pageObjects[rightPage].SetActive(true);
+        if (IsPageAllowed(rightPage))
+            if (rightPage >= 0 && rightPage < pageObjects.Count)
+                pageObjects[rightPage].SetActive(true);
+    }
+
+    //by Chat para a coleção abrir certo
+    bool IsPageAllowed(int pageIndex)
+    {
+        switch (pageIndex)
+        {
+            case 0:
+                return true;
+
+            case 1:
+                return InfoJogo.nata;
+
+            case 2:
+                return InfoJogo.calcada;
+
+            case 3:
+                return InfoJogo.guitarra;
+
+            default:
+                return false;
+        }
     }
 
 

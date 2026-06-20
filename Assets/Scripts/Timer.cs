@@ -95,7 +95,12 @@ public class Timer : MonoBehaviour
         tempoExtra += tempoSegundos;
 
         entreiTerminar = false;
-        StopCoroutine(rotinaTempo);
+
+        if (rotinaTempo != null)
+        {
+            StopCoroutine(rotinaTempo);
+            rotinaTempo = null;
+        }
 
     }
 

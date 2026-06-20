@@ -18,7 +18,7 @@ public class PowerUps : MonoBehaviour
         //Debug.Log("entrei no trigger");
         if (other.CompareTag("Player"))
         {
-            popUp.Show(nome, imagem, descricao);
+            popUp.Show(nome, imagem, descricao, 0.5f);
 
             PlayPowerUp(nome);
 
@@ -44,6 +44,10 @@ public class PowerUps : MonoBehaviour
 
             case "Tempo":
                 tempo.GanhaPerdeTempo(15f);
+                break;
+
+            case "NaoAjudar":
+                tempo.GanhaPerdeTempo(-15f);
                 break;
 
             case "Pano":

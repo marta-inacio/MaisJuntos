@@ -23,6 +23,7 @@ public class ControlarNivel : MonoBehaviour
 
     public void SairJogo()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Jogo");
     }
 
