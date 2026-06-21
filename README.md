@@ -21,5 +21,5 @@ O jogo pode ser descarregado através da página oficial do projeto:
 * **Rafaela Miranda**
 
 ### Ano Letivo
-2024/2025
+2025/2026
 
