@@ -13,3 +13,13 @@ Ao longo da experiência, os jogadores podem descobrir elementos culturais de ca
 O jogo pode ser descarregado através da página oficial do projeto:
 
 **[aqui colocaro link]**
+
+## Autores
+* **Ana Lourenço**
+* **Beatriz Bravo** 
+* **Marta Inácio**
+* **Rafaela Miranda**
+
+### Ano Letivo
+2024/2025
+
