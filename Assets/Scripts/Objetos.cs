@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class ObjetoTransportavelPorClique : MonoBehaviour
+public class Objetos : MonoBehaviour
 {
     [Header("Transporte")]
     public float distanciaX = 5f;
     public string tagPlayer = "Player";
-    public string tagMenina = "menina";
+    public string tagMenina;
 
     [Header("Troca da Menina")]
     public GameObject meninaAtual;
@@ -65,7 +65,6 @@ public class ObjetoTransportavelPorClique : MonoBehaviour
 
             if (!aSerTransportado)
             {
-                // Apanha este objeto ao clicar/tocar nele
                 if (hit.collider.gameObject == gameObject)
                 {
                     Apanhar();
@@ -73,7 +72,6 @@ public class ObjetoTransportavelPorClique : MonoBehaviour
             }
             else
             {
-                // Entrega se clicar/tocar na menina
                 if (hit.collider.CompareTag(tagMenina))
                 {
                     EntregarNaMenina();
@@ -86,23 +84,11 @@ public class ObjetoTransportavelPorClique : MonoBehaviour
     {
         posEcra = Vector2.zero;
 
-        // PC / rato
-        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+        // PC e Android
+        if (Pointer.current != null && Pointer.current.press.wasPressedThisFrame)
         {
-            posEcra = Mouse.current.position.ReadValue();
+            posEcra = Pointer.current.position.ReadValue();
             return true;
-        }
-
-        // Android / toque
-        if (Touchscreen.current != null)
-        {
-            var toque = Touchscreen.current.primaryTouch;
-
-            if (toque.press.wasPressedThisFrame)
-            {
-                posEcra = toque.position.ReadValue();
-                return true;
-            }
         }
 
         return false;
@@ -110,6 +96,8 @@ public class ObjetoTransportavelPorClique : MonoBehaviour
 
     private void Apanhar()
     {
+
+        this.GetComponent<AudioSource>().Play();
         if (player == null)
             return;
 
@@ -119,6 +107,25 @@ public class ObjetoTransportavelPorClique : MonoBehaviour
         {
             rb.linearVelocity = Vector2.zero;
             rb.bodyType = RigidbodyType2D.Kinematic;
+        }
+
+        // tiraa menina triste
+        if (meninaAtual != null)
+        {
+            meninaAtual.SetActive(false);
+        }
+
+        if (meninaFeliz != null)
+        {
+            meninaFeliz.SetActive(true);
+
+            NpcDialogueHospital dialogoFeliz =
+                meninaFeliz.GetComponent<NpcDialogueHospital>();
+
+            if (dialogoFeliz != null)
+            {
+                dialogoFeliz.objetoEntregue = false;
+            }
         }
 
         Debug.Log("Objeto apanhado.");
@@ -139,20 +146,19 @@ public class ObjetoTransportavelPorClique : MonoBehaviour
             col.enabled = false;
         }
 
-        // Ativar a menina feliz
+        // A menina feliz já está ativa desde que o pato foi apanhado
         if (meninaFeliz != null)
         {
-            meninaFeliz.SetActive(true);
-
-            NpcDialogueHospital dialogoFeliz = meninaFeliz.GetComponent<NpcDialogueHospital>();
+            NpcDialogueHospital dialogoFeliz =
+                meninaFeliz.GetComponent<NpcDialogueHospital>();
 
             if (dialogoFeliz != null)
             {
                 dialogoFeliz.objetoEntregue = true;
 
-                // Garante que não fica preso num diálogo anterior
                 InfoJogo.isDialogueActive = false;
                 InfoJogo.activeDialogue = null;
+                InfoJogo.activeDialogue2 = null;
 
                 dialogoFeliz.StartDialogue();
             }
@@ -164,16 +170,6 @@ public class ObjetoTransportavelPorClique : MonoBehaviour
         else
         {
             Debug.LogWarning("meninaFeliz não foi atribuída no Inspector.");
-        }
-
-        // Desativar a menina atual
-        if (meninaAtual != null)
-        {
-            meninaAtual.SetActive(false);
-        }
-        else
-        {
-            Debug.LogWarning("meninaAtual não foi atribuída no Inspector.");
         }
 
         Debug.Log("Objeto entregue à menina.");

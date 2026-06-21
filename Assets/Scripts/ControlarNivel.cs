@@ -5,6 +5,11 @@ public class ControlarNivel : MonoBehaviour
 {
     public GameObject popUpPerder;
     public GameObject popUpGanhar;
+
+    private void Start()
+    {
+        Time.timeScale = 0f;
+    }
     public void PausarJogo()
     {
         Time.timeScale = 0f;
@@ -32,6 +37,7 @@ public class ControlarNivel : MonoBehaviour
         PausarJogo();
         InfoJogo.missao1 = 100;
         InfoJogo.voluntariado = true;
+        popUpGanhar.GetComponent<AudioSource>().Play();
         AbrirPopUp(popUpGanhar);
     }
 
@@ -39,6 +45,7 @@ public class ControlarNivel : MonoBehaviour
     public void PerderJogo()
     {
         PausarJogo();
+        popUpPerder.GetComponent<AudioSource>().Play();
         AbrirPopUp(popUpPerder);
     }
 

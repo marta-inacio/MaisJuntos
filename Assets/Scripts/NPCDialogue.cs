@@ -40,30 +40,50 @@ public class NpcDialogue : MonoBehaviour
         dialoguePanelPlayer.SetActive(false);
     }
 
-        void Update()
+
+    void Update()
     {
-        // Só o diálogo atualmente aberto pode processar cliques
-        if (InfoJogo.isDialogueActive)
-        {
-            if (InfoJogo.activeDialogue != this)
-                return;
-
-            if (Mouse.current != null &&
-                Mouse.current.leftButton.wasPressedThisFrame)
-            {
-                if (isTyping)
-                {
-                    SaltarAnimacao();
-                }
-                else
-                {
-                    NextDialogue();
-                }
-            }
-
+        if (!InfoJogo.isDialogueActive)
             return;
+
+        if (InfoJogo.activeDialogue != this)
+            return;
+
+        if (CliqueOuToqueFeito())
+        {
+            if (isTyping)
+            {
+                SaltarAnimacao();
+            }
+            else
+            {
+                NextDialogue();
+            }
         }
     }
+
+    private bool CliqueOuToqueFeito()
+    {
+        // PC / rato
+        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            return true;
+        }
+
+        // Android / touch
+        if (Touchscreen.current != null)
+        {
+            var toque = Touchscreen.current.primaryTouch;
+
+            if (toque.press.wasPressedThisFrame)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
 
     public void StartDialogue()
     {

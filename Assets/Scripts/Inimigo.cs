@@ -34,6 +34,11 @@ public class Inimigo : MonoBehaviour
 
     void Update()
     {
+
+        if (InfoJogo.isDialogueActive)
+            return;
+
+
         if (colidiu)
         {
             transform.position = posicaoColisao;

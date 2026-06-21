@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Inimigo
   - menina
+  - velhinho
+  - mae
   layers:
   - Default
   - TransparentFX

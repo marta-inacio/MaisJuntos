@@ -298,20 +298,43 @@ public class NPC : MonoBehaviour
         if (!parar)
             return;
 
-        if (Mouse.current != null &&
-            Mouse.current.leftButton.wasPressedThisFrame)
+        if (CliqueOuToqueNoNPC())
         {
-            Vector2 mousePos =
-                Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+            this.GetComponent<AudioSource>().Play();
+            AbrirDialogo();
+        }
+    }
 
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+    private bool CliqueOuToqueNoNPC()
+    {
+        Vector2 posicaoInput;
 
-            if (hit.collider != null &&
-                hit.collider.gameObject == gameObject)
+        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            posicaoInput = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+
+            RaycastHit2D hit = Physics2D.Raycast(posicaoInput, Vector2.zero);
+
+            if (hit.collider != null && hit.collider.gameObject == gameObject)
+                return true;
+        }
+
+        if (Touchscreen.current != null)
+        {
+            var toque = Touchscreen.current.primaryTouch;
+
+            if (toque.press.wasPressedThisFrame)
             {
-                AbrirDialogo();
+                posicaoInput = Camera.main.ScreenToWorldPoint(toque.position.ReadValue());
+
+                RaycastHit2D hit = Physics2D.Raycast(posicaoInput, Vector2.zero);
+
+                if (hit.collider != null && hit.collider.gameObject == gameObject)
+                    return true;
             }
         }
+
+        return false;
     }
 
     void FixedUpdate()

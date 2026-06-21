@@ -18,6 +18,7 @@ public class PowerUps : MonoBehaviour
         //Debug.Log("entrei no trigger");
         if (other.CompareTag("Player"))
         {
+            this.GetComponent<AudioSource>().Play();
             popUp.Show(nome, imagem, descricao, 0.5f);
 
             PlayPowerUp(nome);

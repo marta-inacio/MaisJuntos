@@ -40,6 +40,8 @@ public class Items: MonoBehaviour
         //Debug.Log("entrei no trigger");
         if (other.CompareTag("Player"))
         {
+            this.GetComponent<AudioSource>().Play();
+
             popUp.Show("Encontraste", imagem, nome, 0.8f);
 
             PreencheSlider(nome);

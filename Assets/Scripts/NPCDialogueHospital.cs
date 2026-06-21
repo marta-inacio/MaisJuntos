@@ -1,7 +1,5 @@
 using UnityEngine;
-using System;
 using System.Collections;
-using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using TMPro;
 
@@ -74,21 +72,10 @@ public class NpcDialogueHospital : MonoBehaviour
 
     private bool CliqueOuToqueFeito()
     {
-        // PC / rato
-        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+        // PC e Android
+        if (Pointer.current != null && Pointer.current.press.wasPressedThisFrame)
         {
             return true;
-        }
-
-        // Android / touch
-        if (Touchscreen.current != null)
-        {
-            var toque = Touchscreen.current.primaryTouch;
-
-            if (toque.press.wasPressedThisFrame)
-            {
-                return true;
-            }
         }
 
         return false;
@@ -153,16 +140,13 @@ public class NpcDialogueHospital : MonoBehaviour
             return;
         }
 
-        // Alternar turno
         isNpcTurn = !isNpcTurn;
 
-        // Se o NPC já acabou, passa para o Player
         if (isNpcTurn && npcAcabou)
         {
             isNpcTurn = false;
         }
 
-        // Se o Player já acabou, passa para o NPC
         if (!isNpcTurn && playerAcabou)
         {
             isNpcTurn = true;
@@ -234,13 +218,18 @@ public class NpcDialogueHospital : MonoBehaviour
             popUp.Show(nome, imagem, descricao, 3f);
             contador++;
 
+            if (powerUp != null)
+            {
+                powerUp.PlayPowerUp("Desenho");
+            }
         }
         else
         {
-            popUpAjudar.SetActive(true);
-            powerUp.PlayPowerUp("Desenho");
+            if (popUpAjudar != null)
+            {
+                popUpAjudar.SetActive(true);
+            }
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

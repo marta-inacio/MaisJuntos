@@ -23,6 +23,7 @@ public class Obstaculos : MonoBehaviour
     {
         if (other.gameObject == Jogador)
         {
+            this.GetComponent<AudioSource>().Play();
             Player player = Jogador.GetComponent<Player>();
 
             if (player.salto)

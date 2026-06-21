@@ -79,17 +79,6 @@ public class Timer : MonoBehaviour
         slider.value = time;
     }
 
-    //public void Pausa()
-    //{
-    //    stopTimer = true;
-    //}
-
-    //public void Retomar()
-    //{
-    //    stopTimer = false;
-    //    startTime = Time.time - (gameTime - slider.value);
-    //}
-
     public void GanhaPerdeTempo(float tempoSegundos)
     {
         tempoExtra += tempoSegundos;

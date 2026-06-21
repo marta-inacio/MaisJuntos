@@ -3,7 +3,7 @@ using TMPro;
 
 public class CarregarReflexao : MonoBehaviour
 {
-    public TMP_Text campoTexto; // liga no Inspector
+    public TMP_Text campoTexto; 
 
     void Start()
     {

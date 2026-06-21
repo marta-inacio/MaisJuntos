@@ -5,10 +5,7 @@ using TMPro; // se usares TMP
 
 public class GuardarReflexao : MonoBehaviour
 {
-    public TMP_InputField campoInput; // liga no Inspector
-
-    //nome do voluntariado
-    //public TextMeshPro nomeVoluntariado;
+    public TMP_InputField campoInput; 
 
     public void AoClicarGuardar()
     {
@@ -16,6 +13,5 @@ public class GuardarReflexao : MonoBehaviour
         PlayerPrefs.SetString("TextoGuardado", texto);
         PlayerPrefs.Save();
 
-        //SceneManager.LoadScene("CenaB"); // nome da tua cena B
     }
 }

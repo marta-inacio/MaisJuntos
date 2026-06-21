@@ -95,19 +95,7 @@ public class Menu : MonoBehaviour
 
         if (timer != null)
         {
-            //Debug.Log("enteiraai");
             timer.RetomarJogo();
         }
     }
-
-    //public void MusicaVolume(Slider MV)
-    //{
-    //    print("Volume da música:" + MV.value);
-    //}
-
-    //public void FXVolume(Slider FX)
-    //{
-    //    print("Volume FX:" + FX.value);
-    //}
-
 }

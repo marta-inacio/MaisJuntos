@@ -8,11 +8,6 @@ using UnityEngine.UI;
 
 public class AbreMenus : MonoBehaviour
 {
-    //void Start()
-    //{
-    //    Scene menuScene = SceneManager.GetSceneByName("Menu");
-    //}
-
     void LoadMenu()
     {
         SceneManager.LoadScene("Menu", LoadSceneMode.Additive); 

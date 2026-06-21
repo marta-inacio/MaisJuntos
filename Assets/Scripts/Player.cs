@@ -135,9 +135,6 @@ public class Player : MonoBehaviour
             yield return null;
         }
 
-        //// parar no fim do salto
-        //rb.linearVelocity = Vector2.zero;
-
         anim.speed = 1f;
 
         salto = false;

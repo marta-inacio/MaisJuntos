@@ -71,7 +71,6 @@ public class TirarFoto : MonoBehaviour
         webcamTexture.Stop();
         webcamTexture = null;
 
-        Debug.Log("Foto capturada! Tamanho: " + fotoGuardada.width + "x" + fotoGuardada.height);
 
         //colocar guardada para pôr no livro
         InfoJogo.fotoCapturada = fotoGuardada;

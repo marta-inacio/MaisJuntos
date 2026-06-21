@@ -3,20 +3,20 @@ guid: 22bd4cce88b7c9f47b47e982a2d324aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 493919691174764739
-    second: medico_0
+      213: -8904309710858272494
+    second: Medico_0
   - first:
-      213: 8578579152257438363
-    second: medico_1
+      213: 400763379008294770
+    second: Medico_1
   - first:
-      213: 5289577784975202427
-    second: medico_2
+      213: 3300874413567182262
+    second: Medico_2
   - first:
-      213: 3422238359399075052
-    second: medico_3
+      213: -5910492709194630296
+    second: Medico_3
   - first:
-      213: -7770805093959836578
-    second: medico_4
+      213: -228588661809955024
+    second: Medico_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,7 +125,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: medico_0
+      name: Medico_0
       rect:
         serializedVersion: 2
         x: 1496
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c0ea0c9751cad600800000000000000
-      internalID: 493919691174764739
+      spriteID: 2114b3abe798d6480800000000000000
+      internalID: -8904309710858272494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: medico_1
+      name: Medico_1
       rect:
         serializedVersion: 2
         x: 5395
@@ -162,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b9250e7a94c3d0770800000000000000
-      internalID: 8578579152257438363
+      spriteID: 27f46cc7b2ccf8500800000000000000
+      internalID: 400763379008294770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: medico_2
+      name: Medico_2
       rect:
         serializedVersion: 2
         x: 9559
@@ -184,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b789e3558fa586940800000000000000
-      internalID: 5289577784975202427
+      spriteID: 6b509d45acf0fcd20800000000000000
+      internalID: 3300874413567182262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: medico_3
+      name: Medico_3
       rect:
         serializedVersion: 2
         x: 13631
@@ -206,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cec82b4f7ab3e7f20800000000000000
-      internalID: 3422238359399075052
+      spriteID: 86bfae43236b9fda0800000000000000
+      internalID: -5910492709194630296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: medico_4
+      name: Medico_4
       rect:
         serializedVersion: 2
         x: 16908
@@ -228,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5c5ab340fd882490800000000000000
-      internalID: -7770805093959836578
+      spriteID: 03fb22db2d3e3dcf0800000000000000
+      internalID: -228588661809955024
       vertices: []
       indices: 
       edges: []
@@ -248,11 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      medico_0: 493919691174764739
-      medico_1: 8578579152257438363
-      medico_2: 5289577784975202427
-      medico_3: 3422238359399075052
-      medico_4: -7770805093959836578
+      Medico_0: -8904309710858272494
+      Medico_1: 400763379008294770
+      Medico_2: 3300874413567182262
+      Medico_3: -5910492709194630296
+      Medico_4: -228588661809955024
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
