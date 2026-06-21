@@ -2979,11 +2979,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149473138849310685, guid: 41fc2224df5c7f643b3b6849b10ca38d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 450
+      value: 554.06
       objectReference: {fileID: 0}
     - target: {fileID: 149473138849310685, guid: 41fc2224df5c7f643b3b6849b10ca38d, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 450
+      value: 554.06
       objectReference: {fileID: 0}
     - target: {fileID: 149473138849310685, guid: 41fc2224df5c7f643b3b6849b10ca38d, type: 3}
       propertyPath: m_LocalScale.x
@@ -3027,11 +3027,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149473138849310685, guid: 41fc2224df5c7f643b3b6849b10ca38d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -170
+      value: -209.88
       objectReference: {fileID: 0}
     - target: {fileID: 149473138849310685, guid: 41fc2224df5c7f643b3b6849b10ca38d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 142
+      value: 175.54
       objectReference: {fileID: 0}
     - target: {fileID: 149473138849310685, guid: 41fc2224df5c7f643b3b6849b10ca38d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3047,19 +3047,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 290293934225203761, guid: 41fc2224df5c7f643b3b6849b10ca38d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 250
+      value: 336.13
       objectReference: {fileID: 0}
     - target: {fileID: 290293934225203761, guid: 41fc2224df5c7f643b3b6849b10ca38d, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 296.22
+      value: 398.28
       objectReference: {fileID: 0}
     - target: {fileID: 290293934225203761, guid: 41fc2224df5c7f643b3b6849b10ca38d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -0.000023842
       objectReference: {fileID: 0}
     - target: {fileID: 290293934225203761, guid: 41fc2224df5c7f643b3b6849b10ca38d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000019073
+      value: 0.000010569
       objectReference: {fileID: 0}
     - target: {fileID: 1107898977752410966, guid: 41fc2224df5c7f643b3b6849b10ca38d, type: 3}
       propertyPath: m_Name
@@ -3067,19 +3067,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7483677236648522534, guid: 41fc2224df5c7f643b3b6849b10ca38d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 277.19
+      value: 370.95
       objectReference: {fileID: 0}
     - target: {fileID: 7483677236648522534, guid: 41fc2224df5c7f643b3b6849b10ca38d, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 309.86
+      value: 414.67
       objectReference: {fileID: 0}
     - target: {fileID: 7483677236648522534, guid: 41fc2224df5c7f643b3b6849b10ca38d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.000016212
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 7483677236648522534, guid: 41fc2224df5c7f643b3b6849b10ca38d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 31.17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -88066,28 +88066,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcDialogue
   dialogueNpc:
-  - 'Muito boa tarde! Vai querer pedir alguma coisa? '
-  - "Que maravilha! Ent\xE3o, tem de provar o melhor doce do nosso pa\xEDs\u2026
-    o famoso pastel de nata!"
-  - "O pastel de nata foi criado por monges no in\xEDcio do s\xE9culo XIX, que aproveitavam
-    as gemas de ovo que sobravam do uso de claras para engomar roupas, uma pr\xE1tica
-    comum nos conventos. "
-  - "Embora os \"past\xE9is de Bel\xE9m\" sejam os originais e guardem a receita
-    em segredo, a designa\xE7\xE3o \"pastel de nata\" espalhou-se, tornando-se um
-    \xEDcone nacional. "
-  - Parece delicioso! Vou querer um, por favor.
+  - "Na verdade, n\xE3o conhe\xE7o muito bem a gastronomia portuguesa\u2026 estou
+    a visitar Portugal pela primeira vez a fazer voluntariado! "
+  - "A s\xE9rio, e o que \xE9? "
+  - Wow! E que mais?
+  - 'Parece delicioso! Vou querer um, por favor. '
   dialoguePanelNpc: {fileID: 1783860344632300368}
   dialogueTextNpc: {fileID: 1446962468}
   spriteNpc: {fileID: 0}
   dialoguePlayer:
-  - "Na verdade, n\xE3o conhe\xE7o muito bem a gastronomia portuguesa\u2026 estou
-    a visitar Portugal pela primeira vez a fazer voluntariado! "
-  - "A s\xE9rio, e o que \xE9? "
-  - "Ap\xF3s a Revolu\xE7\xE3o Liberal e o encerramento das ordens religiosas, a
-    receita saiu do convento, e em 1837 iniciou-se a venda dos past\xE9is na zona
-    de Bel\xE9m. "
-  - "Atualmente, \xE9 um doce de renome mundial, eleito frequentemente como uma das
-    melhores iguarias gastron\xF3micas do mundo."
+  - 'Muito boa tarde! Vai querer pedir alguma coisa? '
+  - "Que maravilha! Ent\xE3o, tem de provar o melhor doce do nosso pa\xEDs\u2026
+    o famoso pastel de nata! "
+  - "O pastel de nata foi criado por monges no in\xEDcio do s\xE9culo XIX, que aproveitavam
+    as gemas de ovo que sobravam do uso de claras para engomar roupas, uma pr\xE1tica
+    comum nos conventos.  "
+  - "Embora os \"past\xE9is de Bel\xE9m\" sejam os originais e guardem a receita
+    em segredo, a designa\xE7\xE3o \"pastel de nata\" espalhou-se, tornando-se um
+    \xEDcone nacional. Atualmente, \xE9 um doce de renome mundial, eleito frequentemente
+    como uma das melhores iguarias gastron\xF3micas do mundo. "
   - Com todo o gosto!
   dialoguePanelPlayer: {fileID: 1408232030}
   dialogueTextPlayer: {fileID: 606747342}
