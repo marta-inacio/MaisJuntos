@@ -10,7 +10,7 @@ Ao longo da experiência, os jogadores podem descobrir elementos culturais de ca
 
 ## Download
 
-O jogo pode ser descarregado através da página oficial do projeto:
+O jogo pode ser descarregado através da seguinte página:
 
 **[Mais juntos](https://martainacio.itch.io/maisjuntos)**
 
