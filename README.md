@@ -12,7 +12,7 @@ Ao longo da experiência, os jogadores podem descobrir elementos culturais de ca
 
 O jogo pode ser descarregado através da página oficial do projeto:
 
-**[aqui colocaro link]**
+**[[aqui colocaro link](https://martainacio.itch.io/maisjuntos)]**
 
 ## Autores
 * **Ana Lourenço**
